@@ -1,0 +1,34 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.01545191545628851 0.9682002497292995 0.24969884808075088 2.997497240844949
+  position 0.07327574254030289 0.22887671809686916 -0.2851859741764754
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+Robot {
+  translation 0 0.07 0
+  children [
+    LED {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.01
+          }
+        }
+      ]
+    }
+  ]
+  name "myled"
+  controller "my_controller1"
+}
